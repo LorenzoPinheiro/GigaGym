@@ -5,7 +5,69 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".workout.student.StudentListActivity">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:width="360sp"
+        android:height="80sp"
+        android:backgroundTint="#FEF7FF"
+        android:paddingStart="48sp"
+        android:paddingEnd="48sp"
+        android:text="Treino 1"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:cornerRadius="12sp"
+        app:iconPadding="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="360sp"
+        android:height="80sp"
+        android:backgroundTint="#FEF7FF"
+        android:paddingStart="48sp"
+        android:paddingEnd="48sp"
+        android:text="Treino 2"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:cornerRadius="12sp"
+        app:iconPadding="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="304dp"
+        android:width="360sp"
+        android:height="80sp"
+        android:backgroundTint="#FEF7FF"
+        android:paddingStart="48sp"
+        android:paddingEnd="48sp"
+        android:text="Treino 3"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:cornerRadius="12sp"
+        app:iconPadding="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageWolf2"
@@ -20,10 +82,29 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="64dp"
-        android:layout_height="22dp"
-        android:background="#DACAE7"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="106dp" />
+        android:layout_width="374sp"
+        android:layout_height="48sp"
+        android:layout_marginTop="104dp"
+        android:background="#FEF7FF"
+        android:padding="14sp"
+        android:text="Seus treinos: "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="374dp"
+        android:layout_height="3sp"
+        android:background="#65558F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
