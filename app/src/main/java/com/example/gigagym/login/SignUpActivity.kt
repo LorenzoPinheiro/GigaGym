@@ -1,31 +1,37 @@
-package com.example.gigagym
+package com.example.gigagym.login
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.gigagym.R
 
-class MainActivityEntrar2 : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
 
-    lateinit var btnEsqueci: Button
+    lateinit var btnCadastro: Button
+    lateinit var userTypeLabel: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_entrar2)
+        setContentView(R.layout.activity_sign_up)
 
-        btnEsqueci = findViewById(R.id.buttonEsqueci)
+        btnCadastro = findViewById(R.id.buttonCadastrar3)
+        userTypeLabel = findViewById(R.id.signUpUserLabel)
+        userTypeLabel.text = intent.getStringExtra("userType")
         Log.d("bruma", "onCreate Inicializado");
+
     }
 
     override fun onStart() {
         super.onStart()
-
-        btnEsqueci.setOnClickListener{
-            var intetion = Intent(this,MainActivityEsqueci::class.java) // cadastro Personal
-            startActivity(intetion)
+        btnCadastro.setOnClickListener{
+            if (userTypeLabel.text.toString() == "Aluno") {
+                var intetion = Intent(this, UserDataActivity::class.java)
+                startActivity(intetion)
+            } else {
+                // go to app
+            }
         }
         Log.d("bruma", "onStart Inicializado");
     }
@@ -54,4 +60,5 @@ class MainActivityEntrar2 : AppCompatActivity() {
         super.onDestroy()
         Log.d("bruma", "onDestroy Inicializado");
     }
+
 }

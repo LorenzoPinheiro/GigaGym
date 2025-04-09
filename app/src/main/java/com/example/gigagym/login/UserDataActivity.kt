@@ -1,21 +1,19 @@
-package com.example.gigagym
+package com.example.gigagym.login
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.gigagym.R
 
-class MainActivityDados : AppCompatActivity() {
+class UserDataActivity : AppCompatActivity() {
 
     lateinit var spinner: Spinner
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_dados)
+        setContentView(R.layout.activity_user_data)
 
 
         spinner = findViewById(R.id.spinner)
