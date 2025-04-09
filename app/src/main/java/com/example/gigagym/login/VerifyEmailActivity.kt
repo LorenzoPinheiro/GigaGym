@@ -1,35 +1,29 @@
-package com.example.gigagym
+package com.example.gigagym.login
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gigagym.R
 
-class MainActivityB : AppCompatActivity(){
+class VerifyEmailActivity : AppCompatActivity() {
 
-
-    lateinit var btnEntrar: Button
-    lateinit var btnCadastro: Button
+    lateinit var btn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mainb)
+        setContentView(R.layout.activity_verify_email)
 
-        btnEntrar = findViewById(R.id.buttonEntrar3)
-        btnCadastro = findViewById(R.id.buttonCadastro3)
+        btn = findViewById(R.id.buttonConferir)
         Log.d("bruma", "onCreate Inicializado");
     }
 
     override fun onStart() {
         super.onStart()
 
-        btnEntrar.setOnClickListener{
-            var intetion = Intent(this,MainActivityEntrar2::class.java) // entrar Aluno
-            startActivity(intetion)
-        }
-        btnCadastro.setOnClickListener{
-            var intetion = Intent(this,MainActivityCadastro2::class.java) // cadastro Aluno
+        btn.setOnClickListener{
+            var intetion = Intent(this, ResetPasswordActivity::class.java)
             startActivity(intetion)
         }
         Log.d("bruma", "onStart Inicializado");

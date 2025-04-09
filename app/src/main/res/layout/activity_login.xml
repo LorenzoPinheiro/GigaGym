@@ -84,7 +84,7 @@
         app:layout_constraintVertical_bias="0.921" />
 
     <TextView
-        android:id="@+id/textoPersonal"
+        android:id="@+id/loginUserTypeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ALUNO"

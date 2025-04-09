@@ -13,31 +13,31 @@
         android:theme="@style/Theme.GigaGym"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivityReenviar"
+            android:name=".login.ResetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivityEsqueci"
+            android:name=".login.VerifyEmailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivityDados"
+            android:name=".login.UserDataActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivityCadastro2"
+            android:name=".login.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivityCadastro"
+            android:name=".login.MainActivityCadastro"
             android:exported="false" />
         <activity
-            android:name=".MainActivityEntrar"
+            android:name=".login.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivityEntrar2"
+            android:name=".login.MainActivityEntrar2"
             android:exported="false" />
         <activity
-            android:name=".MainActivityB2"
+            android:name=".login.MainActivityB2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".login.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,7 +45,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivityB" />
+        <activity android:name=".login.LoginActivity" />
     </application>
 
 </manifest>
