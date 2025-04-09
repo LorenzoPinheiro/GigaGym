@@ -13,6 +13,66 @@
         android:theme="@style/Theme.GigaGym"
         tools:targetApi="31">
         <activity
+            android:name=".workout.personal.PersonalEquipmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.personal.PersonalExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.personal.PersonalAddExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.personal.PersonalWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.personal.PersonalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.personal.PersonalSeachActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.personal.PersonalStudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.student.StudentConclusionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.student.StudentExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.student.StudentWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workout.student.StudentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".streak.PersonalStreakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".streak.StudentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".streak.StudentStreakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.EditEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chatbot.ChatBotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".routine.StudentRoutineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".routine.PersonalRoutineActivity"
+            android:exported="false" />
+        <activity
             android:name=".login.ResetPasswordActivity"
             android:exported="false" />
         <activity
