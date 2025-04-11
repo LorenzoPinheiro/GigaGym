@@ -86,7 +86,7 @@
             android:exported="false" />
         <activity
             android:name=".login.MainActivityCadastro"
-            android:exported="false" />
+        android:exported="false" />
         <activity
             android:name=".login.SignInActivity"
             android:exported="false" />
