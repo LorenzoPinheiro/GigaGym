@@ -85,16 +85,7 @@
             android:name=".login.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".login.MainActivityCadastro"
-        android:exported="false" />
-        <activity
             android:name=".login.SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".login.MainActivityEntrar2"
-            android:exported="false" />
-        <activity
-            android:name=".login.MainActivityB2"
             android:exported="false" />
         <activity
             android:name=".login.MainActivity"
