@@ -19,6 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="374dp"
@@ -110,6 +121,54 @@
                 android:textColor="#000000"
                 app:cornerRadius="12dp"
                 app:iconPadding="8dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:width="360dp"
+                android:height="80dp"
+                android:backgroundTint="#FEF7FF"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                android:text="Exercicio 4"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                app:cornerRadius="12dp"
+                app:iconPadding="8dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:width="360dp"
+                android:height="80dp"
+                android:backgroundTint="#FEF7FF"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                android:text="Exercicio 5"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                app:cornerRadius="12dp"
+                app:iconPadding="8dp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:width="360dp"
+                android:height="80dp"
+                android:backgroundTint="#FEF7FF"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                android:text="Exercicio 6"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                app:cornerRadius="12dp"
+                app:iconPadding="8dp" />
         </LinearLayout>
     </ScrollView>
 
@@ -131,16 +190,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="48dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
