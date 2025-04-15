@@ -5,17 +5,20 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.gigagym.BaseActivity
 import com.example.gigagym.R
+import com.example.gigagym.databinding.ActivityStudentExerciseBinding
 
-class StudentExerciseActivity : AppCompatActivity() {
+class StudentExerciseActivity : BaseActivity() {
+
+    lateinit var binding: ActivityStudentExerciseBinding
+    override val bottomNavItemId: Int = R.id.nav_workout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_student_exercise)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        //setContentView(R.layout.activity_student_exercise)
+        binding = ActivityStudentExerciseBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setupBottomNavigation()
     }
 }

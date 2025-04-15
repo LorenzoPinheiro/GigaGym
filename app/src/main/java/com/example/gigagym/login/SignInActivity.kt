@@ -7,11 +7,13 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gigagym.R
+import com.example.gigagym.routine.StudentRoutineActivity
 
 class SignInActivity : AppCompatActivity() {
 
     lateinit var btnEsqueciSenha: Button
     lateinit var userTypeLabel: TextView
+    lateinit var entrar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +22,7 @@ class SignInActivity : AppCompatActivity() {
         btnEsqueciSenha = findViewById(R.id.buttonEsqueci2)
         userTypeLabel = findViewById(R.id.signInUserTypeLabel)
         userTypeLabel.text = intent.getStringExtra("userType")
+        entrar = findViewById(R.id.buttonEntrar2)
 
         Log.d("bruma", "onCreate Inicializado");
     }
@@ -29,6 +32,10 @@ class SignInActivity : AppCompatActivity() {
 
         btnEsqueciSenha.setOnClickListener{
             var intetion = Intent(this, VerifyEmailActivity::class.java)
+            startActivity(intetion)
+        }
+        entrar.setOnClickListener{
+            var intetion = Intent(this, StudentRoutineActivity::class.java)
             startActivity(intetion)
         }
         Log.d("bruma", "onStart Inicializado");
