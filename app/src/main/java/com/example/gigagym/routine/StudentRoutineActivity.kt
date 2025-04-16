@@ -18,6 +18,6 @@ class StudentRoutineActivity : BaseActivity() {
         setContentView(binding.root)
         setupBottomNavigation()
 
-        Log.d("bruma", "onCreate Inicializado");
+        Log.d("tag", "onCreate Inicializado");
     }
 }

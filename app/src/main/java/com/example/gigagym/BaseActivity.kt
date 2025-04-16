@@ -15,7 +15,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 abstract class BaseActivity : AppCompatActivity() {
     lateinit var bottomNavigationView: BottomNavigationView
     abstract val bottomNavItemId: Int
-    var aluno = true
 
     protected fun setupBottomNavigation() {
         bottomNavigationView = findViewById(R.id.bottomNavigation)
