@@ -68,7 +68,7 @@
             android:exported="false" />
         <activity
             android:name=".routine.StudentRoutineActivity"
-            android:exported="true"/>
+            android:exported="false"/>
         <activity
             android:name=".routine.PersonalRoutineActivity"
             android:exported="false" />

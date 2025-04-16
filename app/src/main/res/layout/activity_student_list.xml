@@ -8,16 +8,29 @@
     android:background="#FFFFFF"
     tools:context=".workout.student.StudentListActivity">
 
+    <!-- header -->
     <ImageView
-        android:id="@+id/imageWolf2"
+        android:id="@+id/imageWolf11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/wolf_icon"
+        android:src="@drawable/icon_wolf"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:contentDescription=" " />
 
     <TextView
         android:id="@+id/textView"
