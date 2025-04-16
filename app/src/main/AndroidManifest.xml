@@ -88,9 +88,6 @@
             android:name=".login.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".BaseActivity"
-            android:exported="false"/>
-        <activity
             android:name=".login.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -99,6 +96,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false"/>
         <activity android:name=".login.LoginActivity" />
     </application>
 
