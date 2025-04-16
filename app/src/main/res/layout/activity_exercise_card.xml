@@ -13,7 +13,8 @@
             android:id="@+id/button13"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:layout_marginTop="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
             android:layout_marginBottom="48dp"
             android:width="360dp"
             android:height="80dp"
@@ -33,10 +34,10 @@
             android:layout_alignTop="@+id/button13"
             android:layout_alignEnd="@+id/button13"
             android:layout_alignBottom="@+id/button13"
-            android:layout_marginStart="46dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="233dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="206dp"
+            android:layout_marginBottom="37dp"
             android:text="Treino Brutal" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
