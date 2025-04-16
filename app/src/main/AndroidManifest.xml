@@ -68,7 +68,7 @@
             android:exported="false" />
         <activity
             android:name=".routine.StudentRoutineActivity"
-            android:exported="false" />
+            android:exported="true"/>
         <activity
             android:name=".routine.PersonalRoutineActivity"
             android:exported="false" />
@@ -96,6 +96,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false"/>
         <activity android:name=".login.LoginActivity" />
     </application>
 

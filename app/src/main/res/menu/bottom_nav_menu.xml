@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_routine"
+        android:icon="@drawable/icon_routine"
+        android:title="Rotina" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/icon_chat"
+        android:title="ChatBot" />
+
+    <item
+        android:id="@+id/nav_workout"
+        android:icon="@drawable/icon_workout"
+        android:title="Treinos" />
+
+    <item
+        android:id="@+id/nav_streak"
+        android:icon="@drawable/icon_streak"
+        android:title="Ofensiva" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/icon_profile"
+        android:title="Perfil" />
+</menu>
