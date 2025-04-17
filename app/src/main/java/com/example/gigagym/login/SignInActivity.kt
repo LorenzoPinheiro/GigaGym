@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gigagym.R
+import com.example.gigagym.routine.PersonalRoutineActivity
 import com.example.gigagym.routine.StudentRoutineActivity
 
 class SignInActivity : AppCompatActivity() {
@@ -35,8 +36,13 @@ class SignInActivity : AppCompatActivity() {
             startActivity(intetion)
         }
         entrar.setOnClickListener{
-            var intetion = Intent(this, StudentRoutineActivity::class.java)
-            startActivity(intetion)
+            if (intent.getStringExtra("userType") == "Aluno") {
+                var intetion = Intent(this, StudentRoutineActivity::class.java)
+                startActivity(intetion)
+            } else {
+                var intetion = Intent(this, PersonalRoutineActivity::class.java)
+                startActivity(intetion)
+            }
         }
         Log.d("bruma", "onStart Inicializado");
     }

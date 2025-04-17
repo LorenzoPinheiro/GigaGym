@@ -31,6 +31,64 @@
         app:srcCompat="?attr/actionModeCloseDrawable"
         android:contentDescription=" " />
 
+    <!-- label -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="ChatBot"
+        app:layout_constraintTop_toBottomOf="@+id/imageWolf11"/>
+
+    <!-- chat -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <!-- start chat -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/messageInputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/src_start_chat_bg"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation" >
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="8dp"
+            android:hint="Pergunte à IA"
+            android:background="@android:color/transparent"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sendButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_send"
+            android:contentDescription="Enviar"
+            app:tint="#4A4A4A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"

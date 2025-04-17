@@ -137,6 +137,9 @@
 
             <!-- Treino Segunda -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardRotina"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -196,6 +199,9 @@
 
             <!-- Treino Terça -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardRotina2"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -255,6 +261,9 @@
 
             <!-- Treino Quarta -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardRotina3"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -314,6 +323,9 @@
 
             <!-- Treino Quinta -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardRotina4"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -373,6 +385,9 @@
 
             <!-- Treino Sexta -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardRotina5"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -432,6 +447,9 @@
 
             <!-- Treino Sábado -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardRotina6"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -491,6 +509,9 @@
 
             <!-- Treino Domingo -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardRotina7"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
